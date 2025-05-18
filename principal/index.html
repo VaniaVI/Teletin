@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaña de Donaciones</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+        <!-- Barra superior roja -->
+    <div class="top-bar py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center">
+                        <p class="mb-0 me-3 text-white small">Súmate a nuestras redes</p>
+                        <div class="social-icons d-flex">
+                            <a href="#" class="social-icon me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon me-2"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon me-2"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" class="social-icon me-2"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon me-2"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="d-flex flex-wrap justify-content-md-end justify-content-center">
+                        <a href="#" class="top-menu-item transparencia px-3 py-1 rounded-pill me-2 mb-2 mb-md-0">
+                            <i class="fas fa-book"></i> TRANSPARENCIA
+                        </a>
+                        <a href="#" class="top-menu-item text-white me-2 mb-2 mb-md-0">
+                            <i class="fas fa-hospital"></i> <span class="d-none d-lg-inline">Institutos Teletón</span>
+                        </a>
+                        <a href="#" class="top-menu-item text-white me-2 mb-2 mb-md-0">
+                            <i class="fas fa-newspaper"></i> <span class="d-none d-lg-inline">Noticias</span>
+                        </a>
+                        <a href="#" class="top-menu-item text-white me-2 mb-2 mb-md-0">
+                            <i class="fas fa-book-medical"></i> <span class="d-none d-lg-inline">Revista Rehabilitación Integral</span>
+                        </a>
+                        <a href="#" class="top-menu-item text-white me-2 mb-2 mb-md-0">
+                            <i class="fas fa-heart"></i> <span class="d-none d-lg-inline">Teletón Virtual</span>
+                        </a>
+                        <a href="#" class="top-menu-item text-white me-2 mb-2 mb-md-0">
+                            <i class="fas fa-hands-helping"></i> <span class="d-none d-lg-inline">Formas de ayudar</span>
+                        </a>
+                        <a href="#" class="text-white ms-2">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-content">
+            <h1>Teletín</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="/registro usuario/registro-usuario.html" class="btn">Registrarse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Juntos podemos hacer la diferencia</h2>
+                <p>Ayúdanos a alcanzar nuestra meta y cambiar vidas</p>
+                
+                <div class="donation-card card">
+                    <h3>Meta de donación: $1,000,000</h3>
+                    <p id="donation-amount">$0 recaudados</p>
+                    
+                    <div class="progress-bar">
+                        <div id="donation-progress" class="progress"></div>
+                    </div>
+                    
+                    <div class="donation-buttons">
+                        <button class="btn btn-primary" data-amount="5000">Donar $5,000</button>
+                        <button class="btn btn-primary" data-amount="10000">Donar $10,000</button>
+                        <button class="btn btn-primary" data-amount="50000">Donar $50,000</button>
+                        <button class="btn btn-secondary" data-amount="100000">Donar $100,000</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Section -->
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="heart" class="icon red"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Apoyo Médico</h3>
+                        <p>Brindamos atención médica especializada a quienes más lo necesitan.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="book-open" class="icon blue"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Educación</h3>
+                        <p>Facilitamos acceso a educación de calidad para niños y jóvenes.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="home" class="icon green"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Vivienda</h3>
+                        <p>Construimos hogares seguros para familias en situación vulnerable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios Section -->
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+            <div class="testimonial-grid">
+                <div class="card">
+                    <p>"Gracias a esta fundación, mi hijo pudo recibir el tratamiento que necesitaba. Estaremos eternamente agradecidos."</p>
+                    <div class="author">María González</div>
+                </div>
+                
+                <div class="card">
+                    <p>"El apoyo que recibimos cambió nuestras vidas. Ahora tenemos un hogar seguro donde vivir."</p>
+                    <div class="author">Carlos Rodríguez</div>
+                </div>
+                
+                <div class="card">
+                    <p>"La beca educativa que recibí me permitió continuar mis estudios y ahora tengo un futuro prometedor."</p>
+                    <div class="author">Ana Martínez</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="card" style="max-width: 600px; margin: 0 auto;">
+                <p style="text-align: center;">
+                    <i data-lucide="mail" class="icon"></i> info@campanasolidaria.org<br>
+                    <i data-lucide="phone" class="icon"></i> +123 456 7890<br>
+                    <i data-lucide="map-pin" class="icon"></i> Av. Principal 123, Ciudad
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Campaña Solidaria. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  JS -->
+    <script src="script.js"></script>
+</body>
+</html>

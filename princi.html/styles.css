@@ -1,0 +1,147 @@
+/* Colores personalizados */
+:root {
+    --teleton-red: #e63946;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+.text-teleton {
+    color: var(--teleton-red) !important;
+}
+
+.bg-teleton {
+    background-color: var(--teleton-red) !important;
+}
+
+/* Barra superior roja */
+.top-bar {
+    background-color: var(--teleton-red);
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--teleton-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.top-menu-item {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.top-menu-item i {
+    margin-right: 5px;
+}
+
+.transparencia {
+    background-color: white;
+    color: var(--teleton-red) !important;
+    font-weight: bold;
+}
+
+/* Menú principal */
+.active-nav {
+    position: relative;
+}
+
+.active-nav::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--teleton-red);
+}
+
+.nav-link {
+    color: #333 !important;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--teleton-red) !important;
+}
+
+/* Slider principal */
+.main-slider {
+    background-color: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    min-height: 500px;
+}
+
+.custom-indicators {
+    bottom: 20px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0 5px;
+}
+
+.carousel-indicators .active {
+    background-color: var(--teleton-red);
+}
+
+.custom-control {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-control:hover {
+    background-color: var(--teleton-red);
+}
+
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Botón de accesibilidad */
+.accessibility-button {
+    background-color: var(--teleton-red);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .carousel-item {
+        min-height: auto;
+    }
+}

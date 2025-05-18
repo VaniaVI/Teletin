@@ -1,0 +1,183 @@
+Analizar la solicitud
+Identificar la intención
+Extraer información
+
+Desafío 1: Desarrollar un ChatBOT
+
+Paso 1: Acceder a Automation Anywhere
+- Inicia sesión en la plataforma de Automation Anywhere.
+
+Paso 2: Crear un Nuevo Bot
+- Dirígete a la sección "Bots".
+- Selecciona "Crear Nuevo Bot".
+
+Paso 3: Diseñar el Flujo de Conversación
+1) Identifica las preguntas frecuentes y organiza la información en categorías:
+
+- Información general sobre Teletón.
+- Preguntas sobre la Campaña anual.
+- Información sobre diagnósticos y tratamientos.
+
+2) Utiliza comandos preconstruidos para diseñar el flujo de trabajo:
+
+- Saludo inicial: Bienvenida y presentación del bot.
+- Manejo de preguntas: Crear intenciones y entidades en el bot para identificar las preguntas y responder adecuadamente.
+
+Paso 4: Configurar el Repositorio de Información
+- Carga toda la información relevante en el repositorio.
+- Configura el bot para acceder y utilizar esta información.
+
+Paso 5: Probar y Desplegar el Bot
+- Realiza pruebas exhaustivas para asegurarte de que el bot responde correctamente.
+-Despliega el bot en una página web simulada.
+----------------------------------------------------------------
+Desafío 2: Desarrollar un Bot de Agendamiento de Horas
+
+Paso 1: Configurar el Proceso de Agendamiento
+- Crea un nuevo bot en Automation Anywhere.
+- Define el flujo de trabajo para el agendamiento de horas:
+
+	- Ingreso de datos del paciente: Recoger información del paciente y verificar disponibilidad.
+	- Confirmación de cita: Confirmar la cita y enviar notificación al paciente.
+
+Paso 2: Integrar Material Complementario
+- Utiliza el "Modelo de Atención Teletón 2024" y el "DP 1.1 Reglamento asistencial" para guiar el diseño del bot.
+- Asegúrate de que el bot cumple con todos los requisitos y regulaciones asistenciales.
+
+Paso 3: Probar y Desplegar
+- Realiza pruebas exhaustivas para asegurarte de que el bot gestiona correctamente las citas.
+- Despliega el bot en una página web simulada.
+
+Crecimiento y Escalabilidad
+Pensando en la Versión 2.0
+- Diseña el bot de manera modular para facilitar futuras integraciones.
+- Planifica la integración del sistema de agendamiento de Teletón en la próxima versión.
+
+Presentación del Proyecto
+- Prepara una presentación que destaque la originalidad, utilidad y creatividad del bot.
+- Explica el proceso de desarrollo y cómo llegaste a la solución final.
+- Realiza una demostración en vivo de ambos bots.
+----------------------------------------------------------------
+Desafío 1: Desarrollar un ChatBOT
+Paso 1: Acceso y Configuración Inicial
+Inicia sesión en tu cuenta de Automation Anywhere.
+
+Crea un Nuevo Bot:
+
+En la sección de Bots, selecciona "Crear Nuevo Bot".
+
+Paso 2: Diseño del Flujo de Conversación
+Define las Categorías de Información:
+
+Información general sobre Teletón (misión, visión, historia).
+
+Preguntas sobre la Campaña anual.
+
+Información general sobre diagnósticos y tratamientos.
+
+Crear Intenciones y Entidades:
+
+Intenciones: Estos son los diferentes tipos de consultas que el bot puede entender. Por ejemplo, "Información sobre Teletón", "Detalles de la campaña", "Información de tratamientos".
+
+Entidades: Estos son elementos específicos que el bot puede reconocer dentro de una intención. Por ejemplo, "misión", "visión", "fecha de campaña".
+
+Diseña el Diálogo:
+
+Utiliza el editor de flujos de trabajo para arrastrar y soltar diferentes comandos que representen las respuestas del bot.
+
+Paso 3: Configurar el Repositorio de Información
+Cargar Información:
+
+Asegúrate de que toda la información necesaria esté disponible en un repositorio accesible para el bot.
+
+Configura el Acceso al Repositorio:
+
+Asegúrate de que el bot pueda acceder y recuperar información del repositorio según sea necesario.
+
+Paso 4: Prueba y Despliegue
+Prueba el Bot:
+
+Ejecuta el bot en modo de prueba para verificar que responde correctamente a las consultas.
+
+Despliega el Bot:
+
+Despliega el bot en una página web simulada para que esté accesible a los usuarios.
+
+Desafío 2: Desarrollar un Bot de Agendamiento de Horas
+Paso 1: Configuración Inicial
+Crea un Nuevo Bot:
+
+En la sección de Bots, selecciona "Crear Nuevo Bot".
+
+Paso 2: Diseñar el Proceso de Agendamiento
+Define el Flujo de Trabajo:
+
+Recopilación de Datos del Paciente: Captura la información necesaria del paciente.
+
+Verificación de Disponibilidad: Consulta la disponibilidad de horarios y días.
+
+Confirmación de Cita: Proceso para confirmar y notificar la cita al paciente.
+
+Configurar Interacciones:
+
+Diseña las interacciones del bot para que sea intuitivo y fácil de usar.
+
+Paso 3: Integración de Material Complementario
+Incorporar el Modelo de Atención Teletón 2024:
+
+Asegúrate de que el bot siga las directrices del Modelo de Atención y el Reglamento asistencial.
+
+Paso 4: Prueba y Despliegue
+Prueba el Bot:
+
+Realiza pruebas exhaustivas para asegurar que el bot maneja correctamente las citas.
+
+Despliega el Bot:
+
+Despliega el bot en una página web simulada para que los usuarios puedan interactuar con él.
+
+Crecimiento y Escalabilidad
+Diseño Modular para la Versión 2.0
+Planifica la Integración Futura:
+
+Diseña el bot de manera que sea fácil de integrar con el sistema de agendamiento de Teletón en una futura versión.
+
+Preparar para la Escalabilidad:
+
+Asegúrate de que el bot pueda escalar para manejar un mayor volumen de usuarios y consultas.
+
+Presentación del Proyecto
+Preparación de la Presentación:
+
+Destaca la originalidad, utilidad y creatividad del bot.
+
+Explica el proceso de desarrollo y cómo se llegó a la solución final.
+
+Realiza una demostración en vivo de ambos bots.
+
+Ejemplo de Uso
+Ejemplo del ChatBOT:
+Usuario: "¿Cuál es la misión de Teletón?" Bot: "La misión de Teletón es... [respuesta detallada]."
+
+Ejemplo del Bot de Agendamiento:
+Usuario: "Quiero agendar una cita para mi hijo." Bot: "Claro, ¿podrías proporcionarme el nombre completo del paciente y una fecha preferida?"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
