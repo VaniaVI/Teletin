@@ -1,20 +1,21 @@
+/* Colores personalizados */
 :root {
-    --primary-color: #dc2626;
-    --secondary-color: #ef4444;
-    --background-start: #fee2e2;
-    --background-end: #fecaca;
-    --text-color: #333;
-    --card-background: #ffffff;
-    --teleton-red: #e63946; 
+    --teleton-red: #e63946;
 }
 
+/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     overflow-x: hidden;
-    color: var(--text-color);
-    line-height: 1.6;
-    min-height: 100vh;
-    background: linear-gradient(to bottom, var(--background-start), var(--background-end));
+}
+
+.text-teleton {
+    color: var(--teleton-red) !important;
+    text-decoration: none;
+}
+
+.bg-teleton {
+    background-color: var(--teleton-red) !important;
 }
 
 /* Barra superior roja */
@@ -33,6 +34,7 @@ body {
     justify-content: center;
     font-size: 14px;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .social-icon:hover {
@@ -43,6 +45,7 @@ body {
     font-size: 13px;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .top-menu-item i {
@@ -55,233 +58,86 @@ body {
     font-weight: bold;
 }
 
-
-
-
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+/* Menú principal */
+.active-nav {
+    position: relative;
 }
 
-/* Header */
-.header {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.active-nav::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--teleton-red);
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-}
-
-h1 {
-    color: var(--primary-color);
-    font-size: 2rem;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-}
-
-nav a {
-    color: var(--primary-color);
-    text-decoration: none;
+.nav-link {
+    color: #333 !important;
+    font-size: 14px;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: var(--secondary-color);
+.nav-link:hover {
+    color: var(--teleton-red) !important;
 }
 
-/* Main content */
-main {
-    padding: 2rem 0;
-}
-
-section {
-    margin-bottom: 3rem;
-    align-content: center;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-/* Cards */
-.card {
-    background-color: var(--card-background);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 1.5rem;
-}
-
-/* Estilo para el botón "Registrarse" en el header */
-.header nav a.btn {
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    color: white;
-    background-color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.header nav a.btn:hover {
-    background-color: var(--secondary-color);
-}
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem; /* Ajusta este valor según el espaciado que prefieras */
-}
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        margin-top: 1rem;
-    }
-}
-
-
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-}
-
-.donation-card {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Progress bar */
-.progress-bar {
-    background-color: #e0e0e0;
-    border-radius: 4px;
-    height: 20px;
-    margin: 1rem 0;
+/* Slider principal */
+.main-slider {
+    background-color: #f8f9fa;
+    position: relative;
     overflow: hidden;
 }
 
-.progress {
-    background-color: var(--primary-color);
-    height: 100%;
-    width: 0;
-    transition: width 0.5s ease-in-out;
+.carousel-item {
+    min-height: 500px;
 }
 
-/* Buttons */
-.donation-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+.custom-indicators {
+    bottom: 20px;
 }
 
-.btn {
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0 5px;
 }
 
-.btn-primary {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
+.carousel-indicators .active {
+    background-color: var(--teleton-red);
 }
 
-.btn-outline {
-    background-color: transparent;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+.custom-control {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.btn-secondary {
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
+.custom-control:hover {
+    background-color: var(--teleton-red);
 }
 
-/* Icons */
-.icon {
-    margin-right: 0.5rem;
+.carousel-control-prev {
+    left: 20px;
 }
 
-.blue { color: #3b82f6; }
-.green { color: #22c55e; }
-.red { color: #ef4444; }
-
-/* Testimonials */
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-    margin-left: 10%;
-    margin-right: 10%;
+.carousel-control-next {
+    right: 20px;
 }
 
-.testimonial-grid p {
-    font-style: italic;
-    margin-bottom: 1rem;
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
 }
 
-.author {
-    font-weight: bold;
-}
-
-/* Footer */
-footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 2rem;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        margin-top: 1rem;
-    }
-
-    .donation-buttons {
-        flex-direction: column;
-    }
-
-    .btn {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-    
-    .card-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Agregar estos estilos */
+/* Estilos de Servicios */
 .service-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -345,91 +201,184 @@ footer {
     color: #ef4444;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .service-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
 
-    .service-card {
-        padding: 1rem;
-    }
+
+/* Botón de accesibilidad */
+.accessibility-button {
+    background-color: var(--teleton-red);
 }
 
-/* Hero Section */
-.hero {
-    background-image: url('https://www.teleton.cl/wp-content/uploads/2024/10/WhatsApp-Image-2024-09-30-at-10.20.24-1-scaled-1.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 600px;
+/* ESTILOS DEL FOOTER */
+.footer {
+    background-color: #f8f9fa;
+    color: #333;
+    border-top: 1px solid #e9ecef;
+    margin-top: 3rem;
+}
+
+.footer-logo {
+    max-width: 180px;
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
     position: relative;
-    padding: 4rem 0;
+    padding-bottom: 10px;
+}
+
+.footer-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background-color: var(--teleton-red);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: var(--teleton-red);
+    text-decoration: none;
+}
+
+.contact-links li {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-links li i {
+    color: var(--teleton-red);
+    margin-top: 3px;
+}
+
+.social-icon-footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    color: #666;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon-footer:hover {
+    background-color: var(--teleton-red);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.newsletter-form .form-control {
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ced4da;
+}
+
+.newsletter-form .btn {
+    border-radius: 0 4px 4px 0;
+}
+
+.footer-bottom {
+    background-color: #e9ecef;
+}
+
+.footer-bottom-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.footer-bottom-links li {
+    margin-left: 20px;
+}
+
+.footer-bottom-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: var(--teleton-red);
+}
+
+/* Botón volver arriba */
+.back-to-top-btn {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--teleton-red);
+    color: white;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.4)
-    );
-    z-index: 1;
+.back-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    color: white;
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 20px;
-    text-align: center;
+.back-to-top-btn:hover {
+    background-color: #d32836;
+    transform: translateY(-3px);
 }
 
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.hero .donation-card {
-    background: var(--card-background);
-    color: var(--text-color);
-    max-width: 600px;
-    margin: 2rem auto 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive adjustments for hero */
-@media (max-width: 768px) {
-    .hero {
-        min-height: 500px;
-        padding: 3rem 1rem;
+/* Responsive */
+@media (max-width: 992px) {
+    .carousel-item {
+        min-height: auto;
     }
 
-    .hero h2 {
-        font-size: 2rem;
+    
+    .footer-bottom-links {
+        justify-content: center;
     }
+    
+    .footer-bottom-links li {
+        margin: 0 10px;
+    }
+}
 
-    .hero p {
-        font-size: 1rem;
+@media (max-width: 767px) {
+    .footer-heading {
+        margin-top: 20px;
     }
 }

@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campaña de Donaciones</title>
+    <title>Teletin</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/Logo_Teletón.svg" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-
-
+    
 </head>
 <body>
-        <!-- Barra superior roja -->
+    <!-- Barra superior roja -->
     <div class="top-bar py-2">
         <div class="container">
             <div class="row align-items-center">
@@ -22,12 +23,11 @@
                     <div class="d-flex align-items-center">
                         <p class="mb-0 me-3 text-white small">Súmate a nuestras redes</p>
                         <div class="social-icons d-flex">
-                            <a href="#" class="social-icon me-2"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon me-2"><i class="fab fa-youtube"></i></a>
-                            <a href="#" class="social-icon me-2"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-icon me-2"><i class="fab fa-x-twitter"></i></a>
-                            <a href="#" class="social-icon me-2"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon me-2"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.facebook.com/teletonchile" class="social-icon me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/channel/UCfGbXA1P_n-ggNdrxw1E0Aw" class="social-icon me-2"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/teleton_chile/" class="social-icon me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/teleton/?originalSubdomain=cl" class="social-icon me-2"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.tiktok.com/@teletoncl?lang=es" class="social-icon me-2"><i class="fab fa-tiktok"></i></a>
                         </div>
                     </div>
                 </div>
@@ -60,49 +60,89 @@
         </div>
     </div>
 
-
-
-
-    <!-- Header -->
-    <header class="header">
-        <div class="container header-content">
-            <h1>Teletín</h1>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#testimonios">Testimonios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="/registro usuario/registro-usuario.html" class="btn">Registrarse</a></li>
-                </ul>
+    <!-- Logo y menú principal -->
+    <header class="bg-white shadow-sm py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a class="navbar-brand" href="/">
+                    <img src="https://www.teleton.cl/wp-content/uploads/2022/11/logo-teleton-1.svg" alt="Teletón Chile" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMain">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active-nav">
+                            <a class="nav-link fw-bold" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="/registro/registro.html">INICIO SESIÓN / REGISTRATE</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <h2>Juntos podemos hacer la diferencia</h2>
-                <p>Ayúdanos a alcanzar nuestra meta y cambiar vidas</p>
-                
-                <div class="donation-card card">
-                    <h3>Meta de donación: $1,000,000</h3>
-                    <p id="donation-amount">$0 recaudados</p>
-                    
-                    <div class="progress-bar">
-                        <div id="donation-progress" class="progress"></div>
-                    </div>
-                    
-                    <div class="donation-buttons">
-                        <button class="btn btn-primary" data-amount="5000">Donar $5,000</button>
-                        <button class="btn btn-primary" data-amount="10000">Donar $10,000</button>
-                        <button class="btn btn-primary" data-amount="50000">Donar $50,000</button>
-                        <button class="btn btn-secondary" data-amount="100000">Donar $100,000</button>
+    <!-- Breadcrumb -->
+    <div class="bg-light py-2">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 small">
+                    <li class="breadcrumb-item">Estás en:</li>
+                    <li class="breadcrumb-item active"><a href="/principal/index.html" class="text-teleton">inicio</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Slider principal (Carousel) -->
+    <section class="main-slider">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container py-5">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 mb-4 mb-lg-0">
+                                <img src="https://www.teleton.cl/wp-content/uploads/2025/05/MG_5354.jpg.webp" class="img-fluid shadow" alt="27 Historias de Amor">
+                            </div>
+                            <div class="col-lg-7">
+                                <h2 class="mb-3">27 Historias de Amor</h2>
+                                <h1 class="display-5 fw-bold mb-4">Mamás Teletón publican libro de cartas que visibilizan el valioso trabajo de cuidar</h1>
+                                <a href="#" class="btn btn-outline-dark rounded-pill px-4">LEER MÁS</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- Más slides aquí -->
             </div>
-        </section>
+            
+            <!-- Indicadores del carousel -->
+            <div class="carousel-indicators custom-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            
+            <!-- Controles del carousel -->
+            <button class="carousel-control-prev custom-control" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next custom-control" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
 
         <!-- Servicios Section -->
         <section id="servicios">
@@ -140,50 +180,113 @@
             </div>
         </section>
 
-        <!-- Testimonios Section -->
-        <section id="testimonios">
-            <h2>Testimonios</h2>
-            <div class="testimonial-grid">
-                <div class="card">
-                    <p>"Gracias a esta fundación, mi hijo pudo recibir el tratamiento que necesitaba. Estaremos eternamente agradecidos."</p>
-                    <div class="author">María González</div>
-                </div>
-                
-                <div class="card">
-                    <p>"El apoyo que recibimos cambió nuestras vidas. Ahora tenemos un hogar seguro donde vivir."</p>
-                    <div class="author">Carlos Rodríguez</div>
-                </div>
-                
-                <div class="card">
-                    <p>"La beca educativa que recibí me permitió continuar mis estudios y ahora tengo un futuro prometedor."</p>
-                    <div class="author">Ana Martínez</div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Contacto Section -->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <div class="card" style="max-width: 600px; margin: 0 auto;">
-                <p style="text-align: center;">
-                    <i data-lucide="mail" class="icon"></i> info@campanasolidaria.org<br>
-                    <i data-lucide="phone" class="icon"></i> +123 456 7890<br>
-                    <i data-lucide="map-pin" class="icon"></i> Av. Principal 123, Ciudad
-                </p>
-            </div>
-        </section>
-    </main>
 
-    <!-- Footer -->
-    <footer>
+
+    <!-- Botón de accesibilidad -->
+    <div class="accessibility-button fixed-bottom text-center py-2">
+        <button class="btn btn-link text-white fw-bold border-0">
+            <i class="fas fa-universal-access me-2"></i>
+            Modo Accesible
+        </button>
+    </div>
+
+
+        <!-- FOOTER - INICIO -->
+    <footer class="footer pt-5">
+        <!-- Parte superior del footer con logo, enlaces y newsletter -->
         <div class="container">
-            <p>&copy; 2025 Campaña Solidaria. Todos los derechos reservados.</p>
+            <div class="row">
+                <!-- Logo y descripción -->
+                <div class="col-lg-3 mb-4">
+                    <img src="https://www.teleton.cl/wp-content/uploads/2022/11/logo-teleton-1.svg" alt="Teletón Chile" class="footer-logo mb-3" height="60">
+                    <p class="text-muted small">Teletón es una institución sin fines de lucro dedicada a la rehabilitación integral de niños, niñas y jóvenes con discapacidad motora.</p>
+                    <div class="footer-social mt-3">
+                        <a href="#" class="social-icon-footer me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon-footer me-2"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon-footer me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon-footer me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon-footer"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Enlaces rápidos -->
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-heading mb-3">Enlaces rápidos</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Transparencia</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Institutos -->
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-heading mb-3">Institutos</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Santiago</a></li>
+                        <li><a href="#">Valparaíso</a></li>
+                        <li><a href="#">Concepción</a></li>
+                        <li><a href="#">Antofagasta</a></li>
+                        <li><a href="#">Ver todos</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contacto -->
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-heading mb-3">Contacto</h5>
+                    <ul class="footer-links contact-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Av. Libertador Bernardo O'Higgins 4620, Estación Central, Santiago</li>
+                        <li><i class="fas fa-phone me-2"></i> (56 2) 2677 2000</li>
+                        <li><i class="fas fa-envelope me-2"></i> contacto@teleton.cl</li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="col-lg-3 mb-4">
+                    <h5 class="footer-heading mb-3">Suscríbete a nuestro newsletter</h5>
+                    <p class="text-muted small mb-3">Recibe noticias y actualizaciones de Teletón directamente en tu correo.</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Tu correo electrónico" aria-label="Tu correo electrónico" required>
+                            <button class="btn btn-teleton" type="submit">Suscribirse</button>
+                        </div>
+                    </form>
+                    <div id="newsletterMessage" class="small mt-2 d-none"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Parte inferior del footer con copyright y políticas -->
+        <div class="footer-bottom mt-4 py-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0 small">© 2025 Teletón Chile. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                            <li><a href="#">Mapa del sitio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    
+    <!-- Botón volver arriba -->
+    <button id="backToTopBtn" class="back-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- FOOTER - FIN -->
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!--  JS -->
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>

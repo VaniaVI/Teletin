@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Funcionalidades para el modo accesible
         if (document.body.classList.contains('accessible-mode')) {
             // Aumentar tamaño de fuente
-            document.documentElement.style.fontSize = '120%';
+            document.documentElement.style.fontSize = '130%';
             
             // Aumentar contraste
-            document.documentElement.classList.add('high-contrast');
+            // document.documentElement.classList.add('high-contrast');
             
             // Notificar al usuario
-            const toast = new bootstrap.Toast(createToast('Modo accesible activado'));
+            const toast = new bootstrap.Toast(createToast('Modo accesible activado, se aumenta tamaño de letra'));
             toast.show();
         } else {
             // Restaurar tamaño de fuente
@@ -92,4 +92,43 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(highContrastStyle);
+
+     // FUNCIONALIDADES DEL FOOTER
+    
+    // Botón volver arriba
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    
+    // Mostrar/ocultar botón al hacer scroll
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
+    
+    // Acción del botón volver arriba
+    backToTopBtn.addEventListener('click', function() {
+        // Scroll suave hacia arriba
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });  
+    
+    // Animación de enlaces del footer
+    const footerLinks = document.querySelectorAll('.footer-links a');
+    
+    footerLinks.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+            this.style.paddingLeft = '5px';
+        });
+        
+        link.addEventListener('mouseleave', function() {
+            this.style.paddingLeft = '0';
+        });
+    }); 
+
+
+
 });

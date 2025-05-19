@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Inicio sesion - Teletón</title>
+    <link rel="icon" href="/img/Logo_Teletón.svg.png" type="/img/png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Barra superior roja
+    <div class="top-bar py-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center">
+                        <p class="mb-0 me-3 text-white small">Súmate a nuestras redes</p>
+                        <div class="social-icons d-flex">
+                            <a href="https://www.facebook.com/teletonchile" class="social-icon me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.youtube.com/channel/UCfGbXA1P_n-ggNdrxw1E0Aw" class="social-icon me-2"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/teleton_chile/" class="social-icon me-2"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/teleton/?originalSubdomain=cl" class="social-icon me-2"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.tiktok.com/@teletoncl?lang=es" class="social-icon me-2"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="d-flex flex-wrap justify-content-md-end justify-content-center">
+                        <a href="#" class="top-menu-item transparencia px-3 py-1 rounded-pill me-2 mb-2 mb-md-0">
+                            <i class="fas fa-book"></i> TRANSPARENCIA
+                        </a>
+                        <a href="#" class="top-menu-item text-white me-2 mb-2 mb-md-0">
+                            <i class="fas fa-hospital"></i> <span class="d-none d-lg-inline">Institutos Teletón</span>
+                        </a>
+                        <a href="#" class="top-menu-item text-white me-2 mb-2 mb-md-0">
+                            <i class="fas fa-newspaper"></i> <span class="d-none d-lg-inline">Noticias</span>
+                        </a>
+                        <a href="#" class="top-menu-item text-white me-2 mb-2 mb-md-0">
+                            <i class="fas fa-book-medical"></i> <span class="d-none d-lg-inline">Revista Rehabilitación Integral</span>
+                        </a>
+                        <a href="#" class="top-menu-item text-white me-2 mb-2 mb-md-0">
+                            <i class="fas fa-heart"></i> <span class="d-none d-lg-inline">Teletón Virtual</span>
+                        </a>
+                        <a href="#" class="top-menu-item text-white me-2 mb-2 mb-md-0">
+                            <i class="fas fa-hands-helping"></i> <span class="d-none d-lg-inline">Formas de ayudar</span>
+                        </a>
+                        <a href="#" class="text-white ms-2">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ -->
+
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Ya tengo cuenta</h1>
+                
+                <span>Iniciá sesión con tu correo y contraseña</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Iniciar sesión</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Registrate</h1>
+            
+                <span></span>
+                
+                <!-- Nuevo formulario integrado -->
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmar contraseña" required>
+                <select id="tipoUsuario" name="tipoUsuario" required>
+                    <option value="">Selecciona el tipo de usuario</option>
+                    <option value="donante">Donante</option>
+                    <option value="voluntario">Voluntario</option>
+                    <option value="beneficiario">Beneficiario</option>
+                </select>
+                <button>Registrarse</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Quiero registrame</h1>
+                    <p>No tengo cuenta quiero crear una cuenta</p>
+                    <button class="hidden" id="login">Registrarme</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Ya tengo cuenta</h1>
+                    <p>Iniciá sesión con tu correo y contraseña</p>
+                    <button class="hidden" id="register">Iniciar sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
